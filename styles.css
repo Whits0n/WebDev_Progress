@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    text-align: center;
+    color: #EFEAD8;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+}
+
+.top-container {
+    background-color: #6D8B74;
+    padding: 50px; /* Padding adds space, within your Div, between margin and start of text */
+}
+
+.middle-container {
+    background-color: #5F7161;
+    padding: 5px;
+    /* height: 175px;
+    */
+}
+
+.accounting-image {
+    float: left; /* this is a very useful property. It makes (in this instance) the image "float" to the
+    left of the Div, and the text then wrap around */
+    margin-right: 30px; /* this just adds a margin to the right of the image, pushing the text right */
+    margin-bottom: 30px;
+    width: 25%; /* Because this image, and the one below are INSIDE the parent div of "skill row", if
+    we now change their width to 25%, it is asking CSS to change their width to 25% OF THE PARENT'S 50%,
+    which we already updated below */
+}
+
+/* IF, in the above example with float, we wanted the title to stay wrapped to the image, but the text
+below to remain underneath, we could use a property called "clear" (clear: right;). Clear, and a direction,
+then clears that body of text from the floating image. PLEASE NOTE, we would then need to create a class
+for the text we want to clear */
+
+.code-image {
+    float: right; 
+    margin-left: 30px;
+    width: 25%;
+}
+
+.skill-row {
+    margin: 25px auto 80px auto; /* This auto-centres ALL margins in your Div "box" */
+    text-align: left;
+    width: 50%; /* This makes your Div "box" only 50% width of the page (not 100% as standard) */
+}
+
+.bottom-container {
+    background-color: #C2DED1;
+    color: darkgrey;
+    padding: 5px;
+    /* height: 70px;
+    */
+}
+
+.profile {
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.me {
+    border: solid black 4px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: black;
+    border-width: 15px;
+    filter: contrast(30%);
+    margin: 50px auto;
+    padding: 10px;
+    width: 25%;
+}
+
+h1 {
+    margin: 140px auto 15px auto;
+    color: #EFEAD8;
+    font-size: 3.5rem; /* rem (Root-M) - This is a relative and accessibility type of font (1 is "normal" size text, 2 is 2x) - 
+    Ignores any parent settings for font size also, which is GOOD! */
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    margin-top: 25px;
+    color: #EFEAD8;
+    font-size: 1.75rem;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.wannabe {
+    text-decoration: underline;
+}
+
+.cloud-lower {
+    /* margin-left: 200px;
+    margin-bottom: 300px; */
+    position: absolute; /* Absolute DOES impact the rest of the items on a page, but removes from HTML flow */
+    right: 100px;
+}
+
+.cloud-top {
+    position: absolute;
+    left: 170px;
+}
+
+.cloud-top1 {
+    position: relative; /* This position tag allows us to move items, and with "relative", not have them
+    impact one anothers positioning */
+    right: 400px;
+    filter: contrast(20%);
+}
+
+.headings {
+    margin: 20px auto 2px auto;
+    color: #ADC2A9;
+    font-size: 1.25rem;
+}
+
+.footer-link {
+    color: #6D8B74;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #354259;
+}
+
+.btn {
+    background: #6D8B74;
+    background-image: -webkit-linear-gradient(top, #6D8B74, #5F7161);
+    background-image: -moz-linear-gradient(top, #6D8B74, #5F7161);
+    background-image: -ms-linear-gradient(top, #6D8B74, #5F7161);
+    background-image: -o-linear-gradient(top, #6D8B74, #5F7161);
+    background-image: linear-gradient(to bottom, #6D8B74, #5F7161);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #EFEAD8;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #EFEAD8 1px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #354259;
+    text-decoration: none;
+  }
+
+  .copyright {
+      font-size: 0.80rem;
+      padding: 20px 0;
+  }
